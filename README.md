@@ -1,53 +1,71 @@
 # Simple Shopping Cart
 
-## Project Description
-This project is a minimal e-commerce application that allows users to browse products, add them to a shopping cart, and simulate a checkout process. The backend is built with Node.js and Express, while the frontend uses React. This project demonstrates CRUD operations, API integration, state management, and modal-based UI interactions.
+This project is a minimal e-commerce / shopping cart application. Users can:  
+- Browse products  
+- Search / filter products  
+- Add items to a cart  
+- Update or remove items in the cart  
+- Simulate a checkout / view order summary  
+
+Backend is built using **Node.js + Express**, and the frontend uses **React**. The goal is to demonstrate full-stack CRUD, API integration, and state management.
 
 ---
 
-## Features
-- View a list of products.
-- Filter products by category or search keyword.
-- Add products to a cart.
-- View and manage cart items.
-- Checkout simulation with order summary.
+## Features  
+- View a list of products  
+- Filter products by category or search keyword  
+- Add / remove / update product quantities in cart  
+- Checkout simulation with an order summary  
 
 ---
 
-## Setup Instructions
+## Prerequisites  
+- Node.js (v14+ or v16+)  
+- npm or yarn  
 
-### Prerequisites
-- Node.js (v16+ recommended)
-- npm or yarn
+---
 
-### Backend Setup
-1. Navigate to the backend folder:  
+## Setup & Running Locally
+
+### Backend  
+1. Go into the backend directory:  
    ```bash
    cd backend
-Install dependencies:
+2. Install dependencies
+   ```bash
+   npm install
+3. Start the backend server (development mode):
+    ```bash
+    npm run dev
+The backend should then run at http://localhost:5000 (or whichever port you configured).
 
-bash
-Copy code
-npm install
-Start the server:
+### Frontend
+1. In a separate terminal, go into the frontend directory:
+   ```bash
+   cd frontend
 
-bash
-Copy code
-npm run dev
-The backend will run at http://localhost:5000.
+2. Install dependencies:
+    ```bash
+    npm install
 
-Frontend Setup
-Navigate to the frontend folder:
+3. Start the frontend application:
+    ```bash
+    npm run dev
 
-Copy code
-cd frontend
-Install dependencies:
+The frontend will run (by default) at something like http://localhost:5173 (or whichever port your React setup uses).
 
-Copy code
-npm install
-Start the frontend app:
+Once both backend and frontend are running, you can browse your app, add products to cart, and simulate checkout.
 
-Copy code
-npm run dev
-The app will run at http://localhost:5173.
+### Assumptions & Design Choices
 
+- This is primarily a demonstration / educational project rather than production-ready.
+
+- No actual payments are processed — “checkout” is only a simulation.
+
+- Data persistence may be in-memory or a simple store (depending on your implementation).
+
+- CORS / proxy configuration may be needed since frontend and backend run on different ports.
+
+- State management (for cart, product data) is handled on the client side (e.g. React state, Context, reducers).
+
+- Error handling and validation are minimal for simplicity.
