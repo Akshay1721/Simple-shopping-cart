@@ -1,5 +1,4 @@
 export const productData = [
-  // ELECTRONICS (6 products)
   {
     id: 1,
     name: "Wireless Bluetooth Headphones",
@@ -46,8 +45,6 @@ export const productData = [
   },
 
 
-
-  // CLOTHING (6 products)
   {
     id: 7,
     name: "Organic Cotton T-Shirt",
@@ -104,7 +101,7 @@ export const productData = [
     features: ["Advanced Cushioning", "Breathable Mesh", "Lightweight"]
   },
 
-  // HOME & GARDEN (6 products)
+  
   {
     id: 13,
     name: "Stainless Steel Water Bottle",
@@ -161,7 +158,7 @@ export const productData = [
     features: ["Warm White", "10m Length", "Energy Efficient"]
   },
 
-  // ACCESSORIES (5 products)
+  
   {
     id: 19,
     name: "Leather Laptop Backpack",
@@ -207,7 +204,7 @@ export const productData = [
     features: ["Silicone Material", "Multiple Colors", "Universal Fit"]
   },
 
-  // SPORTS & OUTDOORS (5 products)
+  
   {
     id: 24,
     name: "Yoga Exercise Mat",
