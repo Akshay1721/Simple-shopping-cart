@@ -19,7 +19,7 @@ const ProductGrid = () => {
     try {
       setLoading(true);
       
-      // Try to fetch from backend first
+     
       try {
         const response = await fetch('http://localhost:5000/api/products');
         if (response.ok) {
@@ -32,7 +32,7 @@ const ProductGrid = () => {
         console.log('Backend not available, using local data');
       }
 
-      // Use local productData as fallback
+      
       setProducts(productData);
       setError(null);
       
