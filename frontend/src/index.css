@@ -1,6 +1,6 @@
-@import url('https://cdn.tailwindcss.com');
+
 @import "tailwindcss";
-/* Custom CSS Variables */
+
 :root {
   --primary-500: #667eea;
   --primary-600: #5a67d8;
@@ -9,7 +9,7 @@
   --secondary-600: #68419a;
 }
 
-/* Custom Components */
+
 .btn-primary {
   background: linear-gradient(to right, var(--primary-500), var(--secondary-500));
   color: white;
